@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+  <link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
+  <!-- End Stylesheets -->
+</head>
+<body>
+  <header>
+    <h1><img src="images/logo.png" alt="Borkcode logo" id="logo"></h1>
+    <img src="images/dog-tag.svg" alt="ID Tag" id="borktag">
+    <img src="images/dog-tag-shadow.svg" alt="ID Tag shadow" id="shadow">
+    <h2>Uniting Lost Doggos with Their Humans</h2>
+  </header>
+  <article>
+    
+    <figure id="dog-photo">
+      <img src="images/dog.jpg" alt="Dog photo">
+      <figcaption>Charlie</figcaption>
+    </figure>
+    
+    <!-- Form fields here -->
+    <form name="borkForm">
+      <h3>Welcome!</h3>
+      <p>Thank you for visiting. If you've found a dog who is registered with Borkcode, please help them find their way home!</p>
+      <p>Did you find Charlie?</p>
+      <label class="radio">
+        <input type="radio" name="found" value="Yes" checked>
+        Yes
+      </label>
+      <label class="radio">
+        <input type="radio" name="found" value="No">
+        No
+      </label>
+      <label>Name:
+        <input type="text" placeholder="Your Name">
+      </label>
+      
+      <label>Phone:
+        <input type="tel" placeholder="555-555-5555">
+      </label>
+      <label>Email:
+        <input type="email" placeholder="email@domain.com">
+      </label>
+      <button>Send!</button>
+    </form>
+    
+    <table>
+      <caption>About This Dog</caption>
+      <tr>
+        <td>Name</td>
+        <td>Charlie</td>
+      </tr>
+      <tr>
+        <td>Color</td>
+        <td>Black/Tan</td>
+      </tr>
+      <tr>
+        <td>Weight</td>
+        <td>13 pounds</td>
+      </tr>
+      <tr>
+        <td>Breed</td>
+        <td>Chihuahua mix</td>
+      </tr>
+      <tr>
+        <td>Home City</td>
+        <td>Seattle, WA</td>
+      </tr>
+      <tr>
+        <td>Health</td>
+        <td>No health problems</td>
+      </tr>
+    </table>
+
+  </article>
+  <footer>
+    <p>&copy; 2018 Borkcode / Lauren Halley</p>
+  </footer>
+</body>
+</html>
