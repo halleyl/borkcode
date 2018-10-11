@@ -45,7 +45,9 @@ var vm = new Vue({
       pic: './images/2pepper.jpg'
       }
     ],
-    dogNum: 0
+    dogNum: 0,
+    eName: 'found',
+    eDomain: 'borkcode'
   },
   methods: {
     loadDog: function(dogNum) {
@@ -59,6 +61,11 @@ var vm = new Vue({
       } else {
         this.dogNum = 0
       } 
+    }
+  },
+  computed: {
+    makeEmail() {
+      return 'https://formspree.io/' + this.eName + '@' + this.eDomain + '.com'
     }
   }
 })

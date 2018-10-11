@@ -25,7 +25,8 @@
     </figure>
     
     <!-- Form fields here -->
-    <form name="borkForm">
+    <form :action="makeEmail"
+      method="POST" name="borkForm">
       <h3>Thank you for helping!</h3>
       <p>If you've found a dog who is registered with Borkcode, please help them find their way home.</p>
       <p>Did you find {{dogs[dogNum].name}}?</p>
@@ -38,15 +39,16 @@
         No
       </label>
       <label>Name:
-        <input type="text" placeholder="Your Name">
+        <input type="text" name="name" placeholder="Your Name">
       </label>
       
       <label>Phone:
-        <input type="tel" placeholder="555-555-5555">
+        <input type="tel" name="phone" placeholder="555-555-5555">
       </label>
       <label>Email:
-        <input type="email" placeholder="email@domain.com">
+        <input type="email" name="email" placeholder="email@domain.com">
       </label>
+        <input type="hidden" name="dog" :value="dogs[dogNum].name">
       <button>Send!</button>
       <small>Your contact information will not be shared with anyone except the pet owner.</small>
     </form>
