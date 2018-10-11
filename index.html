@@ -7,8 +7,6 @@
   <!-- Stylesheets -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
   <link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
-  <!-- Vue NOTE: DEVELOPMENT VERSION -->
-  <script src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>
 </head>
 <body>
   <header>
@@ -17,72 +15,33 @@
     <img src="images/dog-tag-shadow.svg" alt="ID Tag shadow" id="shadow">
     <h2>Uniting Lost Doggos with Their Humans</h2>
   </header>
-  <article id="app">
+  <article>
     
     <figure id="dog-photo">
       <img src="images/dog.jpg" alt="Dog photo">
-      <figcaption>{{dogs[0].name}}</figcaption>
     </figure>
     
     <!-- Form fields here -->
-    <form name="borkForm">
-      <h3>Welcome!</h3>
-      <p>Thank you for visiting. If you've found a dog who is registered with Borkcode, please help them find their way home!</p>
-      <p>Did you find {{dogs[0].name}}?</p>
-      <label class="radio">
-        <input type="radio" name="found" value="Yes" checked>
-        Yes
+    <form id="foundDog" name="foundDog">
+      <h3>Thank you for visiting!</h3>
+      <p>Did you find a dog with a Borkcode tag?</p>
+      <p>Please enter the ID number from their tag below:</p>
+      <label>ID Number:
+        <input name="dogId" type="number" required>
       </label>
-      <label class="radio">
-        <input type="radio" name="found" value="No">
-        No
-      </label>
-      <label>Name:
-        <input type="text" placeholder="Your Name">
-      </label>
-      
-      <label>Phone:
-        <input type="tel" placeholder="555-555-5555">
-      </label>
-      <label>Email:
-        <input type="email" placeholder="email@domain.com">
-      </label>
-      <button>Send!</button>
+      <button id="submit">Find That Dog!</button>
       <small>Your contact information will not be shared with anyone except the pet owner.</small>
     </form>
     
-    <table>
-      <caption>About This Dog</caption>
-      <tr>
-        <td>Name</td>
-        <td>{{dogs[0].name}}</td>
-      </tr>
-      <tr>
-        <td>Color</td>
-        <td>{{dogs[0].color}}</td>
-      </tr>
-      <tr>
-        <td>Weight</td>
-        <td>{{dogs[0].weight}} pounds</td>
-      </tr>
-      <tr>
-        <td>Breed</td>
-        <td>{{dogs[0].breed}}</td>
-      </tr>
-      <tr>
-        <td>Hometown</td>
-        <td>{{dogs[0].city}}, {{dogs[0].state}}</td>
-      </tr>
-      <tr>
-        <td>Health</td>
-        <td>{{dogs[0].health}}</td>
-      </tr>
-    </table>
+    <aside>
+      <h4>Who We Are</h4>
+      <p>Founded in 2018, Borkcode helps lost dogs quickly find their way home to their families. Each dog's tag has a scannable QR code and a unique numerical ID, which we use to connect you with their family and make sure they're returned safely!</p>
+    </aside>
 
   </article>
   <footer>
     <p>&copy; 2018 Borkcode / Lauren Halley</p>
   </footer>
 </body>
-<script src="js/bork.js"></script>
+<script src="js/found.js"></script>
 </html>

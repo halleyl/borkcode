@@ -137,7 +137,7 @@ input[type="radio"] {
   display: inline-block;
 }
 
-input[type="text"],[type="tel"],[type="email"] {
+input[type="text"],[type="tel"],[type="email"],[type="number"] {
   display: block;
   width: 100%;
   font-size: 1.25rem;
@@ -169,6 +169,17 @@ small {
 button:hover {
   background-color: #00135b;
 }
+
+aside {
+  background-color: white;
+  border: 1px solid #a4dbda;
+  font-family: 'Open Sans', sans-serif;
+  flex-basis: 25%;
+  margin: 0;
+  padding: 1rem;
+  border-spacing: 0;
+}
+
 
 table {
   border: 1px solid #a4dbda;

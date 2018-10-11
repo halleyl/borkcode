@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Borkcode</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+  <link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
+  <!-- Vue NOTE: DEVELOPMENT VERSION -->
+  <script src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>
+</head>
+<body>
+  <header>
+    <h1><img src="images/logo.png" alt="Borkcode logo" id="logo"></h1>
+    <img src="images/dog-tag.svg" alt="ID Tag" id="borktag">
+    <img src="images/dog-tag-shadow.svg" alt="ID Tag shadow" id="shadow">
+    <h2>Uniting Lost Doggos with Their Humans</h2>
+  </header>
+  <article id="app">
+    
+    <figure id="dog-photo">
+      <img :src="dogs[dogNum].pic" alt="Dog photo">
+      <figcaption>{{dogs[dogNum].name}}</figcaption>
+    </figure>
+    
+    <!-- Form fields here -->
+    <form name="borkForm">
+      <h3>Welcome!</h3>
+      <p>Thank you for visiting. If you've found a dog who is registered with Borkcode, please help them find their way home!</p>
+      <p>Did you find {{dogs[dogNum].name}}?</p>
+      <label class="radio">
+        <input type="radio" name="found" value="Yes" checked>
+        Yes
+      </label>
+      <label class="radio">
+        <input type="radio" name="found" value="No">
+        No
+      </label>
+      <label>Name:
+        <input type="text" placeholder="Your Name">
+      </label>
+      
+      <label>Phone:
+        <input type="tel" placeholder="555-555-5555">
+      </label>
+      <label>Email:
+        <input type="email" placeholder="email@domain.com">
+      </label>
+      <button>Send!</button>
+      <small>Your contact information will not be shared with anyone except the pet owner.</small>
+    </form>
+    
+    <table>
+      <caption>About This Dog</caption>
+      <tr>
+        <td>Name</td>
+        <td>{{dogs[dogNum].name}}</td>
+      </tr>
+      <tr>
+        <td>Color</td>
+        <td>{{dogs[dogNum].color}}</td>
+      </tr>
+      <tr>
+        <td>Weight</td>
+        <td>{{dogs[dogNum].weight}} pounds</td>
+      </tr>
+      <tr>
+        <td>Breed</td>
+        <td>{{dogs[dogNum].breed}}</td>
+      </tr>
+      <tr>
+        <td>Hometown</td>
+        <td>{{dogs[dogNum].city}}, {{dogs[dogNum].state}}</td>
+      </tr>
+      <tr>
+        <td>Health</td>
+        <td>{{dogs[dogNum].health}}</td>
+      </tr>
+    </table>
+
+  </article>
+  <footer>
+    <p>&copy; 2018 Borkcode / Lauren Halley</p>
+  </footer>
+</body>
+<script src="js/bork.js"></script>
+</html>
