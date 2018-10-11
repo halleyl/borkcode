@@ -166,6 +166,12 @@ small {
   display: block;
 }
 
+#message {
+  font-size: .85rem;
+  color: #bf0000;
+  margin-left: .5rem;
+}
+
 button:hover {
   background-color: #00135b;
 }
