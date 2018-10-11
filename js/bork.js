@@ -1,11 +1,6 @@
 // Possibilities:
 // Use components and props
 
-// TODO
-// Add dog image(s) to array
-// Change image src to a v-bind or v-attr?
-
-
 var vm = new Vue({
   
   el: "#app",
@@ -46,8 +41,8 @@ var vm = new Vue({
       }
     ],
     dogNum: 0,
-    eName: 'lhalley42',
-    eDomain: 'gmail'
+    eName: 'bork',
+    eDomain: 'xerrio'
   },
   methods: {
     loadDog: function(dogNum) {
