@@ -27,7 +27,7 @@ header {
   height: 7.9rem;
   animation: spin 3s ease-in-out infinite;
   z-index: 2;
-  position: fixed;
+  position: absolute;
   top: .5rem;
   right: .6rem;
 }
@@ -37,7 +37,7 @@ header {
   width: 6rem;
   height: 7.9rem;
   animation: spin 3s ease-in-out infinite;
-  position: fixed;
+  position: absolute;
   top: .9rem;
   right: .2rem;
   opacity: .8;
@@ -116,11 +116,9 @@ form p {
 }
 
 form p:last-of-type {
-  display: inline;
-  padding-right: 1rem;
-  padding-bottom: 0;
+  display: block;
+  padding: 0 1rem 0 .25rem;
 }
-
 
 label {
   width: 100%;
@@ -155,10 +153,17 @@ button {
   width: 100%;
   padding: .5rem;
   font-size: 1.25rem;
-  margin: .5rem auto;
+  margin: .5rem auto .25rem;
   border-radius: .5rem;
   background-color: #2a3281;
   color: white;
+}
+
+small {
+  font-size: .75rem;
+  color: #999999;
+  text-align: center;
+  display: block;
 }
 
 button:hover {
