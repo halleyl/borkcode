@@ -46,8 +46,8 @@ var vm = new Vue({
       }
     ],
     dogNum: 0,
-    eName: 'found',
-    eDomain: 'borkcode'
+    eName: 'lhalley42',
+    eDomain: 'gmail'
   },
   methods: {
     loadDog: function(dogNum) {
@@ -74,9 +74,6 @@ vm.loadDog()
 
 // TODO
 // Set up a BETTER contingency if i is NaN?
-
-// TODO
-// Set up form handler for contact form
 
 // TODO
 // Figure out location services
