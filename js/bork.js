@@ -1,5 +1,5 @@
-// Possibilities:
-// Use components and props
+// ~~~ TODO ~~~
+// Make sure to change Vue to production version!
 
 var vm = new Vue({
   
@@ -54,7 +54,8 @@ var vm = new Vue({
       if( cleanUrl > 0 && cleanUrl < this.dogs.length) {
         this.dogNum = cleanUrl
       } else {
-        this.dogNum = 0
+        // If no dog is found, send them back to the home page
+        window.location.href = './index.html'
       } 
     }
   },
@@ -66,9 +67,6 @@ var vm = new Vue({
 })
 
 vm.loadDog()
-
-// TODO
-// Set up a BETTER contingency if i is NaN?
 
 // TODO
 // Figure out location services
