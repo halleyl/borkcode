@@ -8,6 +8,10 @@ body {
   background-color: #a4dbda;
 }
 
+a {
+  cursor: url('../images/paw.png'), auto;
+}
+
 header {
   background-color: #2a3281;
   padding: 1rem 1.5rem .5rem;
@@ -192,6 +196,7 @@ small {
 
 button:hover {
   background-color: #00135b;
+  cursor: url('../images/paw.png'), auto;
 }
 
 aside {
