@@ -38,6 +38,39 @@ var vm = new Vue({
       state: 'WA',
       health: 'Arthritis',
       pic: './images/2pepper.jpg'
+      },
+      {
+      id: 3,
+      name: 'Wyatt',
+      color: 'Gray',
+      weight: 26,
+      breed: 'Weimaraner',
+      city: 'Kent',
+      state: 'WA',
+      health: 'No health problems',
+      pic: './images/3wyatt.jpg'
+      },
+      {
+      id: 4,
+      name: 'Greta',
+      color: 'Tan',
+      weight: 8,
+      breed: 'Dachsund',
+      city: 'Seattle',
+      state: 'WA',
+      health: 'No health problems',
+      pic: './images/4greta.jpg'
+      },
+      {
+      id: 5,
+      name: 'Rocky',
+      color: 'Black',
+      weight: 18,
+      breed: 'Pug',
+      city: 'Seattle',
+      state: 'WA',
+      health: 'Seasonal allergies',
+      pic: './images/5rocky.jpg'
       }
     ],
     dogNum: 0,
