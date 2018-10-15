@@ -108,26 +108,27 @@ h3 {
 }
 
 form p {
-  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 textarea:focus, input:focus {
     outline: none;
 }
 
-form p:last-of-type {
-  display: block;
-  padding: 0 1rem 0 .25rem;
-}
-
 label {
   width: 100%;
   display: block;
+  font-weight: 600;
   font-size: 1rem;
   padding: .25rem;
 }
 
+label:first-of-type {
+  padding-top: 1rem;
+}
+
 .radio {
+  font-weight: 400;
   display: inline;
   padding-right: 1rem;
 }
@@ -270,21 +271,21 @@ tr td:first-of-type {
   }
   figure {
     flex-basis: 100%;
-    order: 1;
-    margin: 2% 0 0 0;
-    height: 75vw;
+    order: -1;
+    margin: 0;
+    height: 60vw;
   }
   form {
     flex-basis: 100%;
-    margin: 0;
+    margin: 2% 0 0 0
   }
   aside {
     flex-basis: 100%;
-    order: 2;
+    order: 1;
   }
   table {
     flex-basis: 100%;
-    order: 2;
+    order: 1;
   }
 }
 
@@ -295,6 +296,21 @@ tr td:first-of-type {
   }
   h2 {
     margin-right: 35%;
+  }
+}
+
+@media(max-width: 400px) {
+  #logo {
+    width: 12rem;
+    height: 100%;
+  }
+  h2 {
+    font-size: .9rem;
+    margin-right: 35%;
+  }
+  #shadow, #borktag {
+    width: 5rem;
+    height: 6.6rem;
   }
 }
 

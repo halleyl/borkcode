@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Stylesheets -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
   <link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
   <!-- Vue NOTE: DEVELOPMENT VERSION -->
   <script src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>
@@ -27,7 +27,6 @@
     <form :action="makeEmail"
       method="POST" name="borkForm">
       <h3>Thank you for helping!</h3>
-      <p>If you've found a dog who is registered with Borkcode, please help them find their way home.</p>
       <p>Did you find {{dogs[dogNum].name}}?</p>
       <label class="radio">
         <input type="radio" name="found" value="Yes" checked>
