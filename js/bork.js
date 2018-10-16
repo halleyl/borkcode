@@ -2,13 +2,10 @@
 // Make sure to change Vue to production version!
 
 // TODO
-// Can I change the landing page for formspring?
+// Can I change the landing page for formspree?
 
 // TODO
 // Do I want to add location services?
-
-// TODO
-// Find a way to require phone or email, but not necessarily both
 
 var vm = new Vue({
   
@@ -99,6 +96,14 @@ var vm = new Vue({
         // If no dog is found, send them back to the home page
         window.location.href = './index.html'
       } 
+    },
+    checkForm: function() {
+      document.querySelector('button').addEventListener('click', function() {
+        if( document.querySelector('[name="phone"]').value == "" && document.querySelector('[name="email"]').value == "" ) {
+          event.preventDefault()
+          document.querySelector('#message').innerHTML = "Please enter a phone number and/or email address before sending. Thanks!"
+        }
+      })
     }
   },
   computed: {
@@ -109,3 +114,4 @@ var vm = new Vue({
 })
 
 vm.loadDog()
+vm.checkForm()
