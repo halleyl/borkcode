@@ -1,6 +1,15 @@
 // ~~~ TODO ~~~
 // Make sure to change Vue to production version!
 
+// TODO
+// Can I change the landing page for formspring?
+
+// TODO
+// Do I want to add location services?
+
+// TODO
+// Find a way to require phone or email, but not necessarily both
+
 var vm = new Vue({
   
   el: "#app",
@@ -74,8 +83,8 @@ var vm = new Vue({
       }
     ],
     dogNum: 0,
-    eName: 'bork',
-    eDomain: 'xerrio'
+    eName: 'found',
+    eDomain: 'borkcode'
   },
   methods: {
     loadDog: function(dogNum) {
@@ -100,6 +109,3 @@ var vm = new Vue({
 })
 
 vm.loadDog()
-
-// TODO
-// Figure out location services
