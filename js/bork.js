@@ -2,9 +2,6 @@
 // Make sure to change Vue to production version!
 
 // TODO
-// Can I change the landing page for formspree?
-
-// TODO
 // Do I want to add location services?
 
 var vm = new Vue({

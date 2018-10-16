@@ -91,7 +91,7 @@ figure img {
   margin: 0;
 }
 
-form {
+form, section {
   border: 1px solid #a4dbda;
   background-color: white;
   margin: 0 2%;
@@ -107,7 +107,7 @@ h3 {
   color: #2a3281;
 }
 
-form p {
+form p, section p {
   padding-top: 1rem;
 }
 
