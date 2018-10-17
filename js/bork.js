@@ -1,9 +1,3 @@
-// ~~~ TODO ~~~
-// Make sure to change Vue to production version!
-
-// TODO
-// Do I want to add location services?
-
 var vm = new Vue({
   
   el: "#app",
