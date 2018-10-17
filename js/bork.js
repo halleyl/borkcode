@@ -2,9 +2,6 @@
 // Make sure to change Vue to production version!
 
 // TODO
-// Enforce HTTPS on Github (it's not ready yet)
-
-// TODO
 // Do I want to add location services?
 
 var vm = new Vue({
