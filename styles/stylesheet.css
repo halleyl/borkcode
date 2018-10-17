@@ -127,17 +127,6 @@ label:first-of-type {
   padding-top: 1rem;
 }
 
-.radio {
-  font-weight: 400;
-  display: inline;
-  padding-right: 1rem;
-}
-
-input[type="radio"] {
-  margin: .25rem;
-  display: inline-block;
-}
-
 input[type="text"],[type="tel"],[type="email"],[type="number"] {
   display: block;
   width: 100%;
@@ -147,7 +136,7 @@ input[type="text"],[type="tel"],[type="email"],[type="number"] {
   border: 1px solid #2a3281;
 }
 
-input::placeholder {
+input::placeholder, textarea::placeholder {
   color: #cccccc;
 }
 
@@ -165,9 +154,24 @@ button {
   padding: .5rem;
   font-size: 1.25rem;
   margin: .5rem auto .25rem;
+  border: 1px solid #2a3281;
   border-radius: .5rem;
   background-color: #2a3281;
   color: white;
+}
+
+button:hover {
+  background-color: #00135b;
+  cursor: url('../images/paw.png'), auto;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background-color: #a4dbda;
+  color: #00135b;
 }
 
 small {
@@ -181,11 +185,6 @@ small {
   font-size: .85rem;
   color: #bf0000;
   margin-left: .5rem;
-}
-
-button:hover {
-  background-color: #00135b;
-  cursor: url('../images/paw.png'), auto;
 }
 
 aside {

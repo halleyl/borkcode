@@ -39,10 +39,10 @@
         <input type="email" name="email" placeholder="email@domain.com">
       </label>
       <label>Notes or Comments:
-        <textarea></textarea>
+        <textarea name="notes" placeholder="Any other comments?"></textarea>
       </label>
-        <input type="hidden" name="dog-id" :value="dogs[dogNum].id">
-        <input type="hidden" name="dog" :value="dogs[dogNum].name">
+      <input type="hidden" name="dog-id" :value="dogs[dogNum].id">
+      <input type="hidden" name="dog" :value="dogs[dogNum].name">
       <input type="hidden" name="_next" value="https://borkcode.com/thanks.html">
       <input type="hidden" name="_subject" :value="'Borkcode: ' + dogs[dogNum].name + ' found!'">
       <div id="message"></div>
