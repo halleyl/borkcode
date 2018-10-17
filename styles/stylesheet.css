@@ -245,7 +245,7 @@ tr td:first-of-type {
     order: 1;
     margin: 2% 2% 0 0;
   }
-  form {
+  form, section {
     flex-basis: 100%;
     margin: 0;
     height: 100%;
@@ -275,7 +275,7 @@ tr td:first-of-type {
     margin: 0;
     height: 60vw;
   }
-  form {
+  form, section {
     flex-basis: 100%;
     margin: 2% 0 0 0
   }

@@ -58,7 +58,7 @@ var vm = new Vue({
       name: 'Greta',
       color: 'Tan',
       weight: 8,
-      breed: 'Dachsund',
+      breed: 'Dachshund',
       city: 'Seattle',
       state: 'WA',
       health: 'No health problems',
