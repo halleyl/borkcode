@@ -26,17 +26,8 @@
     <!-- Form fields here -->
     <form :action="makeEmail"
       method="POST" name="borkForm">
-      <h3>Thank you for helping!</h3>
-      <p>Your assistance means so much to us, to the dogs, and to the people who love them!</p>
-      <p>Did you find {{dogs[dogNum].name}}?</p>
-      <label class="radio">
-        <input type="radio" name="found" value="Yes" checked>
-        Yes
-      </label>
-      <label class="radio">
-        <input type="radio" name="found" value="No">
-        No
-      </label>
+      <h3>Looks like you found {{dogs[dogNum].name}}!</h3>
+      <p>Now let's get them home! Please enter your information below.</p>
       <label>Name:
         <input type="text" name="name" placeholder="Your Name">
       </label>
