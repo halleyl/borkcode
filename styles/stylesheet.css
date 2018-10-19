@@ -19,9 +19,15 @@ header {
   position: relative;
   overflow-y: visible;
   background: url('../images/head.svg');
-  background-position: top;
+  background-position: left top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
+}
+
+@media(max-width:1280px) {
+  header {
+    background-size: cover;
+  }
 }
 
 #logo {
