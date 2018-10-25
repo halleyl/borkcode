@@ -9,17 +9,16 @@
   <!-- Stylesheets -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather:900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-  <link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="styles/found.css" type="text/css">
   <!-- Vue -->
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
-  <header>
-    <h1><a href="index.html"><img src="images/logo.svg" alt="Borkcode logo" id="logo"></a></h1>
-    <img src="images/dog-tag.svg" alt="ID Tag" id="borktag">
-    <h2>Uniting Lost Doggos with Their Humans</h2>
-  </header>
   <article id="app">
+    <header>
+      <h1><a href="index.html"><img src="images/logo.svg" alt="Borkcode logo" id="logo"></a></h1>
+      <h2>Uniting Lost Doggos with Their Humans</h2>
+    </header>
     
     <figure id="dog-photo">
       <img :src="dogs[dogNum].pic" alt="Dog photo">
@@ -71,7 +70,7 @@
         <td>{{dogs[dogNum].breed}}</td>
       </tr>
       <tr>
-        <td>Hometown</td>
+        <td>Home</td>
         <td>{{dogs[dogNum].city}}, {{dogs[dogNum].state}}</td>
       </tr>
       <tr>
