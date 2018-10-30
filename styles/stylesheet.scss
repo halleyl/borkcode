@@ -1,0 +1,275 @@
+$light: #f8eddb;
+$medium: #b29172;
+$med8: rgba(178, 145, 114, .8);
+$med9: rgba(178, 145, 114, .9);
+$dark: #312a24;
+$shadow: #1c1616;
+$accent1: #f77462;
+$acc8: rgba(247, 116, 98, .8);
+$acc9: rgba(247, 116, 98, .9);
+$accent2: #fdc70c;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(#ffffff, #f8eddb, #b29172, #b29172);
+  min-height: 100vh;
+}
+
+a {
+  cursor: url('../images/paw.png'), auto;
+}
+
+header {
+  grid-column: 1 / 9;
+  grid-row: 1 / 3;
+  width: 100%;
+  position: relative;
+  padding-top: 1rem;
+  }
+
+#logo {
+  display: block;
+  width: 100%;
+  max-width: 25rem;
+  height: 100%;
+  padding: 0 1rem .5rem;
+  margin-right: auto;
+}
+
+h2 {
+  display: inline-block;
+  color: $medium;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.22rem;
+  padding: 0 1rem .5rem;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 5rem auto auto auto auto auto auto auto;
+}
+
+#register {
+  min-height: 22rem;
+  background: linear-gradient($med9, $med9), url("../images/register-600.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column: 1 / 9;
+  grid-row: 6 / 8;
+  padding: 5%;
+  font-family: 'Open Sans', sans-serif;
+  color: $dark;
+  font-size: 1rem;
+  position: relative;
+  button {
+    font-family: 'Merriweather', serif;
+    width: 95%;
+    padding: .5rem;
+    font-size: 1.25rem;
+    margin: 1.5rem 5% 5% 0;
+    border: 1px solid $accent2;
+    border-radius: .5rem;
+    background-color: $accent2;
+    color: $dark;
+    &:hover {
+      background-color: $dark;
+      color: $accent2;
+      outline: none;
+      cursor: url('../images/paw.png'), auto;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      border: 1px solid $accent2;
+      color: $light;
+    }
+  }
+}
+
+#foundDog {
+  min-height: 22rem;
+  background: linear-gradient($acc9, $acc9), url("../images/found-600.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column: 1 / 9;
+  grid-row: 4 / 6;
+  padding: 5%;
+  font-family: 'Open Sans', sans-serif;
+  color: $dark;
+  font-size: 1rem;
+  position: relative;
+  button {
+    font-family: 'Merriweather', serif;
+    width: 95%;
+    padding: .5rem;
+    font-size: 1.25rem;
+    margin: .5rem 5% 5% 0;
+    border: 1px solid $accent2;
+    border-radius: .5rem;
+    background-color: $accent2;
+    color: $dark;
+    position: relative;
+    &:hover {
+      background-color: $dark;
+      color: $accent2;
+      outline: none;
+      cursor: url('../images/paw.png'), auto;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      border: 1px solid $accent2;
+      color: $light;
+    }
+  }
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  color: $shadow;
+}
+
+form p {
+  padding-top: 1rem;
+  color: $shadow;
+}
+
+label {
+  width: 95%;
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: .5rem 5% .25rem 0;
+}
+
+label:first-of-type {
+  padding-top: 1rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 1.25rem;
+  padding: .5rem;
+  border-radius: .5rem;
+  border: 1px solid $medium;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #cccccc;
+}
+
+small {
+  font-size: .75rem;
+  color: $accent2;
+  text-align: center;
+  display: block;
+}
+
+#message {
+  font-size: .88rem;
+  color: $accent2;
+}
+
+aside {
+  background-color: $dark;
+  grid-column: 1 / 9;
+  grid-row: 8 / 9;
+  z-index: 2;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  padding: 2rem;
+  border-spacing: 0;
+  color: white;
+}
+
+h4 {
+  font-family: 'Merriweather', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+}
+
+h4 + p {
+  padding-top: 1rem;
+}
+
+footer {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .75rem;
+  text-align: center;
+  padding: .5rem;
+}
+
+@media(min-width: 600px) {
+  #foundDog {
+    min-height: 25rem;
+    background: linear-gradient($acc8, $acc8), url("../images/found.jpg");
+    background-size: cover;
+    background-position: right top;
+    padding-right: 50%;
+    label {
+      width: 90%;
+      position: absolute;
+      bottom: 6.5rem;
+    }
+    button {
+      width: 90%;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  #register {
+    min-height: 25rem;
+    background: linear-gradient($med8, $med8), url("../images/register.jpg");
+    background-size: cover;
+    background-position: left top;
+    padding-left: 50%;
+    button {
+      width: 90%;
+      margin-left: -45%;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  #message {
+    position: absolute;
+    bottom: 5.4rem;
+  }
+}
+
+@media(min-width: 850px) {
+  #foundDog {
+    min-height: 28rem;
+    padding-right: 50%;
+    label {
+      width: 45%;
+      margin-bottom: .75rem;
+    }
+    button {
+      width: 45%;
+      margin: 1.5rem 5% 3rem 0;
+    }
+    #message {
+      margin-bottom: .5rem;
+    }
+  }
+  #register {
+    min-height: 28rem;
+    padding-left: 50%;
+    button {
+      width: 45%;
+      margin: 1.5rem 5% 3rem 0;
+    }
+  }
+}
