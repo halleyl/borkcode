@@ -9,7 +9,7 @@
   <!-- Stylesheets -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather:900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-  <link rel="stylesheet" href="styles/thanks.css" type="text/css">
+  <link rel="stylesheet" href="styles/status.css" type="text/css">
 </head>
 <body>
   <article>
@@ -19,28 +19,30 @@
     </header>
     
     <figure id="dog-photo">
-      <img src="images/thanks.jpg" alt="Dog photo">
+      <img src="images/status.jpg" alt="Dog photo">
     </figure>
     
     <section>
-      <h3>Thank you!</h3>
-      <p>Your information has been submitted. You're a dog hero!</p>
-      <h4>What Happens Next</h4>
+      <h3>Submission Status</h3>
+      <ul id="bar">
+        <li>1</li><li>2</li><li>3</li><li>4</li>
+      </ul>
       <ol>
-        <li>We will contact the owner to ensure that the missing dog is theirs.</li>
-        <li>When we receive confirmation, we'll give them your contact info and vice versa.</li>
-        <li>You and the owner arrange a meeting.</li>
-        <li>Doggo reunion!</li>
+        <li>We're contacting the owner now to see if their dog is missing.</li>
       </ol>
-      <p>To stay up to date on the status of your submission, use this tracking link:</p>
-      <textarea>https://borkcode.com/status.html?track=295</textarea>
-      <button>Copy Link</button><button>Open Link</button>
+      <h4>Tips for meeting up safely:</h4>
+      <ul id="safety">
+        <li>Meet during daylight hours.</li>
+        <li>Bring a friend or family member. Safety in numbers!</li>
+        <li>Arrange to meet in a public location such as a grocery store parking lot, your local library, or even outside a police station.</li>
+        <li>Let someone know where you'll be and who you're meeting. Plan to call them within 30 minutes of your meeting to let them know you're safe.</li>
+      </ul>
     </section>
 
   </article>
   <footer>
     <p>&copy; 2018 Borkcode</p>
   </footer>
-  <script src="js/thanks.js"></script>
+  <script src="js/status.js"></script>
 </body>
 </html>
