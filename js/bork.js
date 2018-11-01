@@ -5,13 +5,13 @@ var vm = new Vue({
     dogs: [
       {
       id: 0,
-      name: '(Dog Name)',
-      color: '(Dog Color)',
+      name: '',
+      color: '',
       weight: 0,
-      breed: '(Dog Breed)',
-      city: '(City)',
-      state: '(State)',
-      health: '(Health Status)',
+      breed: '',
+      city: '',
+      state: '',
+      notes: '',
       pic: './images/0dog.jpg'
       },
       {
@@ -22,7 +22,7 @@ var vm = new Vue({
       breed: 'Chihuahua mix',
       city: 'Seattle',
       state: 'WA',
-      health: 'No health problems',
+      notes: 'Missing some hair around his neck and chest',
       pic: './images/1charlie.jpg'
       },
       {
@@ -33,7 +33,7 @@ var vm = new Vue({
       breed: 'Corgi',
       city: 'Shoreline',
       state: 'WA',
-      health: 'Arthritis',
+      notes: 'Mild arthritis (no medication needed)',
       pic: './images/2pepper.jpg'
       },
       {
@@ -44,7 +44,7 @@ var vm = new Vue({
       breed: 'Weimaraner',
       city: 'Kent',
       state: 'WA',
-      health: 'No health problems',
+      notes: 'N/A',
       pic: './images/3wyatt.jpg'
       },
       {
@@ -55,7 +55,7 @@ var vm = new Vue({
       breed: 'Dachshund',
       city: 'Seattle',
       state: 'WA',
-      health: 'No health problems',
+      notes: 'Patch of white fur next to her tail',
       pic: './images/4greta.jpg'
       },
       {
@@ -66,7 +66,7 @@ var vm = new Vue({
       breed: 'Pug',
       city: 'Seattle',
       state: 'WA',
-      health: 'Seasonal allergies',
+      notes: 'Seasonal allergies',
       pic: './images/5rocky.jpg'
       }
     ],

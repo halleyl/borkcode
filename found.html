@@ -29,17 +29,17 @@
       method="POST" name="borkForm" id="borkForm">
       <h3>Looks like you found {{dogs[dogNum].name}}!</h3>
       <p>Now let's get them home! Please enter your information below.</p>
-      <label>Name:
+      <label>Name
         <input type="text" name="name" placeholder="Your Name">
       </label>
       
-      <label>Phone:
+      <label>Phone
         <input type="tel" name="phone" placeholder="555-555-5555">
       </label>
-      <label>Email:
+      <label>Email
         <input type="email" name="email" placeholder="email@domain.com">
       </label>
-      <label>Notes or Comments:
+      <label>Notes or Comments
         <textarea name="notes" placeholder="Any other comments?"></textarea>
       </label>
       <input type="hidden" name="dog-id" :value="dogs[dogNum].id">
@@ -74,8 +74,8 @@
         <td>{{dogs[dogNum].city}}, {{dogs[dogNum].state}}</td>
       </tr>
       <tr>
-        <td>Health</td>
-        <td>{{dogs[dogNum].health}}</td>
+        <td>Notes</td>
+        <td>{{dogs[dogNum].notes}}</td>
       </tr>
     </table>
 

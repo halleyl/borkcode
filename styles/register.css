@@ -40,18 +40,20 @@ article {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 5rem auto auto auto 2rem auto auto auto; }
 
-figure {
+section {
   grid-column: 1 / 9;
   grid-row: 3 / 6;
-  overflow: hidden; }
-  figure img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: top left;
-       object-position: top left;
-    max-width: 125%; }
+  padding: 2rem;
+  margin-top: 0;
+  background-color: rgba(178, 145, 114, 0.8); }
+  section h5 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem; }
+  section p {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1rem; }
 
-#borkForm {
+#regForm {
   min-height: 22rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(247, 116, 98, 0.9)), to(rgba(247, 116, 98, 0.9)));
   background: linear-gradient(rgba(247, 116, 98, 0.9), rgba(247, 116, 98, 0.9));
@@ -64,7 +66,7 @@ figure {
   color: #312a24;
   font-size: 1rem;
   position: relative; }
-  #borkForm button {
+  #regForm button {
     font-family: 'Merriweather', serif;
     width: 95%;
     padding: .5rem;
@@ -75,14 +77,14 @@ figure {
     background-color: #fdc70c;
     color: #312a24;
     position: relative; }
-    #borkForm button:hover {
+    #regForm button:hover {
       background-color: #312a24;
       color: #fdc70c;
       outline: none;
       cursor: url("../images/paw.png"), auto; }
-    #borkForm button:focus {
+    #regForm button:focus {
       outline: none; }
-    #borkForm button:active {
+    #regForm button:active {
       border: 1px solid #fdc70c;
       color: #f8eddb; }
 
@@ -94,6 +96,15 @@ h3 {
 form p {
   padding-top: 1rem;
   color: #1c1616; }
+
+h4 {
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
+  color: white;
+  clear: both;
+  padding-top: 1.5rem; }
+  h4:first-of-type {
+    margin-bottom: -1.25rem; }
 
 label {
   width: 95%;
@@ -112,6 +123,37 @@ input {
   padding: .5rem;
   border-radius: .5rem;
   border: 1px solid #b29172; }
+
+input[type="file"] {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8rem;
+  font-weight: 600; }
+
+select {
+  display: block;
+  width: 100%;
+  font-size: 1.25rem;
+  border-radius: .5rem;
+  border: 1px solid #b29172;
+  font: inherit;
+  height: 2.5rem; }
+
+ul {
+  padding: 2rem 3rem;
+  margin-top: 1rem;
+  position: relative;
+  left: -1rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.25);
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 1rem; }
+  ul li:first-of-type {
+    font-family: 'Merriweather', serif;
+    list-style: none;
+    margin-left: -1rem;
+    font-size: 1.75rem;
+    padding-bottom: .5rem; }
 
 textarea {
   display: block;
@@ -144,47 +186,6 @@ small {
   font-size: .88rem;
   color: #fdc70c; }
 
-table {
-  background-color: #312a24;
-  grid-column: 1 / 9;
-  grid-row: 5 / 7;
-  z-index: 2;
-  font-family: 'Open Sans', sans-serif;
-  position: relative;
-  padding: 0 2rem 2rem 2rem;
-  border-spacing: 0 .5rem;
-  color: #f8eddb; }
-  table caption {
-    padding: 1rem .5rem .5rem .5rem;
-    font-size: 1.5rem;
-    background-color: #312a24;
-    font-family: 'Merriweather', serif; }
-  table tr {
-    padding-bottom: 2rem; }
-  table td {
-    color: #f8eddb;
-    padding: .2rem .2rem .2rem 1rem;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(178, 145, 114, 0.9)), color-stop(rgba(178, 145, 114, 0.8)), to(#312a24));
-    background: linear-gradient(to right, rgba(178, 145, 114, 0.9), rgba(178, 145, 114, 0.8), #312a24); }
-  table td:first-of-type {
-    width: 5.5rem;
-    color: #312a24;
-    padding-left: 1rem;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    border-right: 1px solid rgba(178, 145, 114, 0.8);
-    background: -webkit-gradient(linear, left top, right top, from(#f8eddb), to(rgba(178, 145, 114, 0.9)));
-    background: linear-gradient(to right, #f8eddb, rgba(178, 145, 114, 0.9)); }
-
-h4 {
-  font-family: 'Merriweather', serif;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: white; }
-
-h4 + p {
-  padding-top: 1rem; }
-
 footer {
   font-family: 'Open Sans', sans-serif;
   font-size: .75rem;
@@ -196,46 +197,47 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 5rem 1fr 1fr 1fr 1fr;
     grid-template-rows: 5rem auto auto auto 2rem auto auto auto; }
 
-  figure {
+  section {
     grid-column: 1 / 5;
-    grid-row: 3 / 9; }
+    grid-row: 3 / 8; }
 
-  #borkForm {
+  #regForm {
     grid-column: 5 / 9;
-    grid-row: 3 / 6; }
-
-  table {
-    grid-column: 1 / 9;
-    grid-row: 6 / 9; } }
+    grid-row: 3 / 9; } }
 @media (min-width: 825px) {
-  #borkForm {
+  section {
+    overflow: visible; }
+
+  #regForm {
     grid-column: 5 / 9;
-    grid-row: 2 / 6; } }
+    grid-row: 2 / 9; } }
 @media (min-width: 1000px) {
   article {
     grid-template-columns: 1fr 1fr 1fr 5rem 1fr 1fr 1fr 1fr;
-    grid-template-rows: 5rem auto auto auto 2rem auto auto auto; }
+    grid-template-rows: 5rem auto auto auto auto auto auto auto; }
 
-  table {
-    grid-column: 4 / 9;
-    grid-row: 6 / 9; }
-
-  #borkForm {
+  #regForm {
     padding-bottom: 1%; }
 
-  label:nth-of-type(2) {
+  h4:first-of-type {
+    margin-bottom: -1.5rem; }
+
+  .left {
     display: inline-block;
     width: 45%;
     float: left;
     margin-right: 5%;
     margin-top: 0rem; }
 
-  label:nth-of-type(3) {
+  .right {
     display: inline-block;
     width: 45%;
     float: left;
     margin-top: 0rem; }
-    label:nth-of-type(3):after {
-      clear: both; } }
+    .right:after {
+      clear: both; }
+    .right .full {
+      clear: both;
+      padding-top: 5rem; } }
 
-/*# sourceMappingURL=found.css.map */
+/*# sourceMappingURL=register.css.map */

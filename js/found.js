@@ -12,3 +12,9 @@ formButton.addEventListener("click", function() {
   }
 })
 
+var regButton = document.getElementById('learn')
+
+regButton.addEventListener("click", function() {
+  event.preventDefault()
+  window.location.href = './register.html'
+})
