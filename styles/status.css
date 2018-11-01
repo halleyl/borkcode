@@ -67,15 +67,20 @@ section {
     width: 100%;
     background-color: #f8eddb;
     margin: 1rem 0 0;
-    border-radius: 2rem; }
+    border-radius: 2rem;
+    -webkit-box-shadow: 0 3px 3px #312a24;
+            box-shadow: 0 3px 3px #312a24; }
     section #bar li {
       display: inline-block;
       width: 25%;
-      padding: 1rem; }
+      padding: 1rem 1rem 1rem 2rem;
+      border-right: 1px solid rgba(178, 145, 114, 0.8); }
       section #bar li:first-of-type {
         background-color: #fdc70c;
         border-top-left-radius: 2rem;
         border-bottom-left-radius: 2rem; }
+      section #bar li:last-of-type {
+        border-right: none; }
   section ol {
     background-color: rgba(0, 0, 0, 0.25);
     padding: 1rem;
@@ -146,9 +151,6 @@ footer {
     grid-template-rows: 5rem auto auto auto 2rem auto auto auto; }
 
   section {
-    padding-bottom: 1%; }
-
-  #safety {
-    margin-bottom: 4rem; } }
+    padding-bottom: 1%; } }
 
 /*# sourceMappingURL=status.css.map */

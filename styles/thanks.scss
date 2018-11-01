@@ -82,14 +82,35 @@ section {
   p {
     padding-top: 1rem;
   }
-  h4 {
-    font-family: 'Merriweather', serif;
-    font-size: 1.25rem;
-    padding: 1rem 0 .5rem 0;
-  }
   ol {
     margin-left: 1.25rem;
   }
+  
+  h4 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, .25);
+    width: 100%;
+    padding: 2rem 0 0 2rem;
+  }
+  ol {
+    background-color: rgba(255, 255, 255, .25);
+    padding: 1rem 2rem 2rem 3rem;
+    margin-left: 0;
+    margin-bottom: .5rem;
+    width: 100%;
+    li {
+      background-color: none;
+      border-radius: none;
+      display: list-item;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  
   textarea {
     display: block;
     background: none;

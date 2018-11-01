@@ -84,14 +84,19 @@ section {
     background-color: $light;
     margin: 1rem 0 0;
     border-radius: 2rem;
+    box-shadow: 0 3px 3px $dark;
     li {
       display: inline-block;
       width: 25%;
-      padding: 1rem;
+      padding: 1rem 1rem 1rem 2rem;
+      border-right: 1px solid $med8;
       &:first-of-type {
         background-color: $accent2;
         border-top-left-radius: 2rem;
         border-bottom-left-radius: 2rem;
+      }
+      &:last-of-type {
+        border-right: none;
       }
     }
   }
@@ -181,8 +186,5 @@ footer {
   }
   section {
     padding-bottom: 1%;
-  }
-  #safety {
-    margin-bottom: 4rem;
   }
 }
