@@ -21,9 +21,9 @@ header {
 
 #logo {
   display: block;
-  width: 100%;
+  width: 70%;
   max-width: 25rem;
-  height: 100%;
+  height: 70%;
   padding: 0 1rem .5rem;
   margin-right: auto; }
 
@@ -32,7 +32,7 @@ h2 {
   color: #b29172;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 1.22rem;
+  font-size: 1rem;
   padding: 0 1rem .5rem; }
 
 article {
@@ -185,6 +185,14 @@ footer {
   padding: .5rem; }
 
 @media (min-width: 600px) {
+  #logo {
+    width: 100%;
+    max-width: 25rem;
+    height: 100%; }
+
+  h2 {
+    font-size: 1.22rem; }
+
   #foundDog {
     min-height: 25rem;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(247, 116, 98, 0.8)), to(rgba(247, 116, 98, 0.8))), url("../images/found.jpg");
@@ -237,4 +245,4 @@ footer {
       width: 45%;
       margin: 1.5rem 5% 3rem 0; } }
 
-/*# sourceMappingURL=stylesheet.css.map */
+/*# sourceMappingURL=index.css.map */
