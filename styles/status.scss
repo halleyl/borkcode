@@ -80,41 +80,37 @@ section {
   font-size: 1rem;
   position: relative;
   #bar {
-    width: 100%;
-    background-color: $light;
-    margin: 1rem 0 0;
-    border-radius: 2rem;
-    box-shadow: 0 3px 3px $dark;
-    li {
-      display: inline-block;
-      width: 25%;
-      padding: 1rem 1rem 1rem 2rem;
-      border-right: 1px solid $med8;
-      &:first-of-type {
-        background-color: $accent2;
-        border-top-left-radius: 2rem;
-        border-bottom-left-radius: 2rem;
-      }
-      &:last-of-type {
-        border-right: none;
-      }
-    }
-  }
-  ol {
-    background-color: rgba(0, 0, 0, .25);
-    padding: 1rem;
-    margin: 0 1.5rem;
+    padding: 1rem 1rem 0;
+    border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    list-style: none;
+    counter-reset: list-counter;
     li {
-      margin-left: 2rem;
-      padding: .5rem;
-      color: $light;
-      opacity: .25;
-      &:first-of-type {
-        color: $accent2;
-        opacity: 1;
-      }
+      counter-increment: list-counter;
+      background: linear-gradient(to right, rgba(0, 0, 0, .25), rgba(0, 0, 0, 0));
+      margin-bottom: 1rem;
+      margin-left: -1rem;
+      padding: .75rem 1.25rem .75rem 0;
+      border-top-left-radius: 2rem;
+      border-bottom-left-radius: 2rem;
+      color: rgba(0, 0, 0, .5);
+    }
+    li:first-of-type {
+      color: $shadow;
+      background: linear-gradient(to right, white, rgba(255, 255, 255, .75), rgba(255, 255, 255, .25));
+    }
+    li::before {
+      content: counter(list-counter) ". ";
+      color: rgba(0, 0, 0, .5);
+      padding: .75rem 1.25rem .75rem 1.75rem;
+      margin-right: .75rem;
+      font-weight: bold;
+      border-top-left-radius: 2rem;
+      border-bottom-left-radius: 2rem;
+    }
+    li:first-of-type::before {
+      color: $shadow;
+      background-color: $accent2;
     }
   }
   h4 {
@@ -128,7 +124,7 @@ section {
   #safety {
     background-color: rgba(255, 255, 255, .25);
     padding: 1rem 2rem 2rem 3rem;
-    margin-bottom: .5rem;
+    margin-bottom: 2rem;
     width: 100%;
     li {
       background-color: none;
